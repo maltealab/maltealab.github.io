@@ -111,6 +111,54 @@ p {
   font-size: 0.875rem;
 }
 
+.policy-link {
+  margin-top: 12px;
+}
+
+.policy h1 {
+  font-size: 1.75rem;
+  line-height: 1.35;
+}
+
+.policy > p {
+  margin-top: 16px;
+}
+
+.effective-date {
+  font-weight: 700;
+}
+
+.policy section {
+  margin-top: 36px;
+}
+
+.policy h2 {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.6);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.policy section p,
+.policy section ul,
+.policy section ol {
+  margin-top: 12px;
+}
+
+.policy ul,
+.policy ol {
+  margin-bottom: 0;
+  padding-left: 1.4em;
+}
+
+.policy li + li {
+  margin-top: 6px;
+}
+
+.policy a {
+  overflow-wrap: anywhere;
+}
+
 a {
   color: var(--navy);
   text-decoration: underline;
