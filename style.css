@@ -1,0 +1,140 @@
+:root {
+  --ivory: #F4EEE3;
+  --navy: #22324A;
+  --navy-muted: rgba(34, 50, 74, 0.78);
+  --gold: #D9A441;
+  --card: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--navy);
+  font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 32px;
+}
+
+.site-header h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: 1.125rem;
+}
+
+.section {
+  margin-top: 48px;
+}
+
+.section h2 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.section > p {
+  margin-top: 16px;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 16px;
+}
+
+.app-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+}
+
+.app-name {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.app-subtitle {
+  color: var(--navy-muted);
+}
+
+.app-copy {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.app-description {
+  margin-top: 4px;
+}
+
+.status-chip {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 2px 12px;
+  border: 1.5px solid var(--gold);
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.site-footer {
+  margin-top: 64px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(217, 164, 65, 0.6);
+  color: var(--navy-muted);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 560px) {
+  .page {
+    padding-top: 72px;
+  }
+
+  .app-card {
+    flex-direction: row;
+    gap: 20px;
+    padding: 24px;
+  }
+}
